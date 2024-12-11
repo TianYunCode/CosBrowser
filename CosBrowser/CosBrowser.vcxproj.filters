@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Form Files\uicom">
+      <UniqueIdentifier>{7f947dbe-18c7-4993-9150-28d96807dbd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\uilogin">
+      <UniqueIdentifier>{62c5f1c5-7cec-46f5-a94e-a9375caf58b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\uimain">
+      <UniqueIdentifier>{aa1acf90-c1a7-4914-b64c-0bb7438b0282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\uitransfer">
+      <UniqueIdentifier>{25f3694d-bc7b-4ff4-a726-e252c6ddd1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend">
+      <UniqueIdentifier>{a0936940-4157-43f9-909e-ef36cc82cece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{b30e4676-255a-435d-8e4d-cafc57ddf663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend">
+      <UniqueIdentifier>{f41ee92a-52d8-4b64-aa02-2f5e63c9e9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\helper">
+      <UniqueIdentifier>{18e1cd28-d51d-4470-89ec-5d27f781d3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\middle">
+      <UniqueIdentifier>{ed47f607-98f5-472f-85d8-5b6c4d522ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\plugins">
+      <UniqueIdentifier>{4841201d-9120-4250-aed6-dc3b0b103d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\dao">
+      <UniqueIdentifier>{f47f2e95-cf65-4182-b58b-4841f8ff2f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\dao\clouds">
+      <UniqueIdentifier>{7aa7fd16-9bf9-485e-9010-a0345397898b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\dao\configs">
+      <UniqueIdentifier>{d377b6e6-de30-457c-a8e5-afb164c7fd41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\dao\dbs">
+      <UniqueIdentifier>{f3f34c4c-2e3b-4fe3-bb8b-7a25ec4772d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\dao\logs">
+      <UniqueIdentifier>{ae2ccd61-7ed3-4d82-a2fb-f563736d9f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bend\man">
+      <UniqueIdentifier>{ad1a2a2c-75a3-4f00-8ef7-7f456edc973b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend\uicom">
+      <UniqueIdentifier>{8628d3a9-3c6c-447c-8ab0-84666f6dc168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend\uidelegates">
+      <UniqueIdentifier>{ae44c7c0-85d6-4922-9ed9-72cfb7cb67b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend\uilogin">
+      <UniqueIdentifier>{d57a0c04-cb2e-49be-9f7e-7fcdb6c8a36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend\uimain">
+      <UniqueIdentifier>{6e58674b-4cfc-4f02-8b6f-9f50aaa57ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fend\uitransfer">
+      <UniqueIdentifier>{d9b4413d-b064-46dc-a971-c9ed0db6c953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\middle\models">
+      <UniqueIdentifier>{90faa1ce-717d-4ee3-890e-a5798f6a4efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\middle\signals">
+      <UniqueIdentifier>{94458dd6-8cf5-4133-9e2b-2e151885b1ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend">
+      <UniqueIdentifier>{a1d461bb-8446-4fc1-bb90-b4f0ab28a601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{e2c7779b-539e-4fc6-a4e9-29ccafc82c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend">
+      <UniqueIdentifier>{d461453a-0e1b-4d69-9147-754a0d90d8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helper">
+      <UniqueIdentifier>{6096f4d5-f9e3-4e27-b302-02fac7a6241d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\middle">
+      <UniqueIdentifier>{485c51b9-69b0-4010-b299-22b002e60a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plugins">
+      <UniqueIdentifier>{b90b93b9-da3e-4b33-bdd1-0e6c8fd3baa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\dao">
+      <UniqueIdentifier>{61c1eeb9-73d6-4c63-837d-3ee0c6d5a8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\man">
+      <UniqueIdentifier>{e5af2c8a-d242-47bd-b8fb-f6c4d2a90ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\dao\clouds">
+      <UniqueIdentifier>{2e9b6ccc-2801-4c9c-948f-0c9779fd8fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\dao\configs">
+      <UniqueIdentifier>{aa2057c5-7629-4d6c-b907-3197b52bd8fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\dao\dbs">
+      <UniqueIdentifier>{012d256c-ef5b-41b2-9166-d4dfee34aa46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bend\dao\logs">
+      <UniqueIdentifier>{2eaef0fa-cb45-4ec0-8af2-6f7b67dd1809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend\uicom">
+      <UniqueIdentifier>{0228ef93-8e55-47be-b1ad-c3508b0f2276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend\uidelegates">
+      <UniqueIdentifier>{fc9b7255-93a7-4922-84f2-b40d9aa91c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend\uilogin">
+      <UniqueIdentifier>{c3e1f0c5-a8fa-4a88-851e-1444983fe70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend\uimain">
+      <UniqueIdentifier>{7780834b-da1c-4da3-bcce-874796d1a2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fend\uitransfer">
+      <UniqueIdentifier>{78ae7bac-1f90-4684-b5ca-680141b4e68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\middle\models">
+      <UniqueIdentifier>{bff9b24e-4ed0-40b8-b2d7-11bbd9f098a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\middle\signals">
+      <UniqueIdentifier>{e048a93f-ca39-4895-9377-1244116f75ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="CosBrowser.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\gateway.cpp">
+      <Filter>Source Files\bend</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\man\mandb.cpp">
+      <Filter>Source Files\bend\man</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\man\mancloud.cpp">
+      <Filter>Source Files\bend\man</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\clouds\daocloudscos.cpp">
+      <Filter>Source Files\bend\dao\clouds</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\clouds\daocloudsmock.cpp">
+      <Filter>Source Files\bend\dao\clouds</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\configs\versioncmd.cpp">
+      <Filter>Source Files\bend\dao\configs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\configs\versionjson.cpp">
+      <Filter>Source Files\bend\dao\configs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\configs\version.cpp">
+      <Filter>Source Files\bend\dao\configs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\dbs\daologininfosqlite.cpp">
+      <Filter>Source Files\bend\dao\dbs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\dbs\daologininfo.cpp">
+      <Filter>Source Files\bend\dao\dbs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\logs\loggerqdebug.cpp">
+      <Filter>Source Files\bend\dao\logs</Filter>
+    </ClCompile>
+    <ClCompile Include="bend\dao\logs\basiclogger.cpp">
+      <Filter>Source Files\bend\dao\logs</Filter>
+    </ClCompile>
+    <ClCompile Include="config\exceptions.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="config\loggerproxy.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uitransfer\uiupload.cpp">
+      <Filter>Source Files\fend\uitransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uitransfer\uidownload.cpp">
+      <Filter>Source Files\fend\uitransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uitransfer\uitransfer.cpp">
+      <Filter>Source Files\fend\uitransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uiobjectstablewidget.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uitoolbarwidget.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uibucketslistwidget.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uibucketstablewidget.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uicreatebucketdialog.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uimain\uimain.cpp">
+      <Filter>Source Files\fend\uimain</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uilogin\uilogindialog.cpp">
+      <Filter>Source Files\fend\uilogin</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uidelegates\uitableitemdelegate.cpp">
+      <Filter>Source Files\fend\uidelegates</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uitableview.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uibasedialog.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uibreadwidget.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uicomboline.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uicompletercombobox.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uilineedit.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uimessagebox.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uipagewidget.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uiprogresswidget.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uipushbutton.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="fend\uicom\uiqosdialog.cpp">
+      <Filter>Source Files\fend\uicom</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\bytehelper.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\dbsqlite.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="helper\filehelper.cpp">
+      <Filter>Source Files\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="middle\manglobal.cpp">
+      <Filter>Source Files\middle</Filter>
+    </ClCompile>
+    <ClCompile Include="middle\manmodels.cpp">
+      <Filter>Source Files\middle</Filter>
+    </ClCompile>
+    <ClCompile Include="middle\models\cloudmodels.cpp">
+      <Filter>Source Files\middle\models</Filter>
+    </ClCompile>
+    <ClCompile Include="middle\signals\mansignals.cpp">
+      <Filter>Source Files\middle\signals</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\manplugin.cpp">
+      <Filter>Source Files\plugins</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="fend\uicom\uibasedialog.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uicom\uibreadwidget.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uicom\uimessagebox.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uicom\uipagewidget.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uicom\uiprogresswidget.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uicom\uiqosdialog.ui">
+      <Filter>Form Files\uicom</Filter>
+    </QtUic>
+    <QtUic Include="fend\uilogin\uilogindialog.ui">
+      <Filter>Form Files\uilogin</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uibucketslistwidget.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uibucketstablewidget.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uicreatebucketdialog.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uimain.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uiobjectstablewidget.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uimain\uitoolbarwidget.ui">
+      <Filter>Form Files\uimain</Filter>
+    </QtUic>
+    <QtUic Include="fend\uitransfer\uidownload.ui">
+      <Filter>Form Files\uitransfer</Filter>
+    </QtUic>
+    <QtUic Include="fend\uitransfer\uitransfer.ui">
+      <Filter>Form Files\uitransfer</Filter>
+    </QtUic>
+    <QtUic Include="fend\uitransfer\uiupload.ui">
+      <Filter>Form Files\uitransfer</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bend\gateway.h">
+      <Filter>Header Files\bend</Filter>
+    </QtMoc>
+    <QtMoc Include="bend\man\mancloud.h">
+      <Filter>Header Files\bend\man</Filter>
+    </QtMoc>
+    <QtMoc Include="bend\man\mandb.h">
+      <Filter>Header Files\bend\man</Filter>
+    </QtMoc>
+    <QtMoc Include="bend\dao\logs\basiclogger.h">
+      <Filter>Header Files\bend\dao\logs</Filter>
+    </QtMoc>
+    <QtMoc Include="bend\dao\logs\loggerqdebug.h">
+      <Filter>Header Files\bend\dao\logs</Filter>
+    </QtMoc>
+    <QtMoc Include="config\loggerproxy.h">
+      <Filter>Header Files\config</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uitransfer\uidownload.h">
+      <Filter>Header Files\fend\uitransfer</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uitransfer\uitransfer.h">
+      <Filter>Header Files\fend\uitransfer</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uitransfer\uiupload.h">
+      <Filter>Header Files\fend\uitransfer</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uibucketslistwidget.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uibucketstablewidget.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uicreatebucketdialog.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uimain.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uiobjectstablewidget.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uimain\uitoolbarwidget.h">
+      <Filter>Header Files\fend\uimain</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uilogin\uilogindialog.h">
+      <Filter>Header Files\fend\uilogin</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uidelegates\uitableitemdelegate.h">
+      <Filter>Header Files\fend\uidelegates</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uibasedialog.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uibreadwidget.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uicomboline.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uicompletercombobox.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uilineedit.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uimessagebox.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uipagewidget.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uiprogresswidget.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uipushbutton.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uiqosdialog.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="fend\uicom\uitableview.h">
+      <Filter>Header Files\fend\uicom</Filter>
+    </QtMoc>
+    <QtMoc Include="middle\manglobal.h">
+      <Filter>Header Files\middle</Filter>
+    </QtMoc>
+    <QtMoc Include="middle\manmodels.h">
+      <Filter>Header Files\middle</Filter>
+    </QtMoc>
+    <QtMoc Include="middle\signals\mansignals.h">
+      <Filter>Header Files\middle\signals</Filter>
+    </QtMoc>
+    <QtMoc Include="plugins\manplugin.h">
+      <Filter>Header Files\plugins</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bend\dao\clouds\daoclouds.h">
+      <Filter>Header Files\bend\dao\clouds</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\clouds\daocloudscos.h">
+      <Filter>Header Files\bend\dao\clouds</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\clouds\daocloudsmock.h">
+      <Filter>Header Files\bend\dao\clouds</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\configs\version.h">
+      <Filter>Header Files\bend\dao\configs</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\configs\versioncmd.h">
+      <Filter>Header Files\bend\dao\configs</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\configs\versionjson.h">
+      <Filter>Header Files\bend\dao\configs</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\dbs\daologininfo.h">
+      <Filter>Header Files\bend\dao\dbs</Filter>
+    </ClInclude>
+    <ClInclude Include="bend\dao\dbs\daologininfosqlite.h">
+      <Filter>Header Files\bend\dao\dbs</Filter>
+    </ClInclude>
+    <ClInclude Include="config\apis.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\common.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\errorcode.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\exceptions.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config\globals.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\bytehelper.h">
+      <Filter>Header Files\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\dbsqlite.h">
+      <Filter>Header Files\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="helper\filehelper.h">
+      <Filter>Header Files\helper</Filter>
+    </ClInclude>
+    <ClInclude Include="middle\models\cloudmodels.h">
+      <Filter>Header Files\middle\models</Filter>
+    </ClInclude>
+    <ClInclude Include="middle\models\dbmodels.h">
+      <Filter>Header Files\middle\models</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

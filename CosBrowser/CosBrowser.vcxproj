@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>vs2019</QtInstall>
+    <QtModules>concurrent;core;gui;sql;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>vs2019</QtInstall>
+    <QtModules>concurrent;core;gui;sql;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\Intermediate</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\Intermediate</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>.\;.\third\cos\include;.\third\cos\third_party\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>.\third\cos\libs\x64;.\third\cos\third_party\lib\x64\poco;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cossdk.lib;PocoFoundation.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>.\;.\third\cos\include;.\third\cos\third_party\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>.\third\cos\libs\x64;.\third\cos\third_party\lib\x64\poco;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cossdk.lib;PocoFoundation.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="middle\manglobal.cpp" />
+    <ClCompile Include="middle\manmodels.cpp" />
+    <ClCompile Include="middle\models\cloudmodels.cpp" />
+    <ClCompile Include="middle\signals\mansignals.cpp" />
+    <ClCompile Include="plugins\manplugin.cpp" />
+    <QtRcc Include="CosBrowser.qrc" />
+    <ClCompile Include="bend\dao\clouds\daocloudscos.cpp" />
+    <ClCompile Include="bend\dao\clouds\daocloudsmock.cpp" />
+    <ClCompile Include="bend\dao\configs\version.cpp" />
+    <ClCompile Include="bend\dao\configs\versioncmd.cpp" />
+    <ClCompile Include="bend\dao\configs\versionjson.cpp" />
+    <ClCompile Include="bend\dao\dbs\daologininfo.cpp" />
+    <ClCompile Include="bend\dao\dbs\daologininfosqlite.cpp" />
+    <ClCompile Include="bend\dao\logs\basiclogger.cpp" />
+    <ClCompile Include="bend\dao\logs\loggerqdebug.cpp" />
+    <ClCompile Include="bend\gateway.cpp" />
+    <ClCompile Include="bend\man\mancloud.cpp" />
+    <ClCompile Include="bend\man\mandb.cpp" />
+    <ClCompile Include="config\exceptions.cpp" />
+    <ClCompile Include="config\loggerproxy.cpp" />
+    <ClCompile Include="fend\uicom\uibasedialog.cpp" />
+    <ClCompile Include="fend\uicom\uibreadwidget.cpp" />
+    <ClCompile Include="fend\uicom\uicomboline.cpp" />
+    <ClCompile Include="fend\uicom\uicompletercombobox.cpp" />
+    <ClCompile Include="fend\uicom\uilineedit.cpp" />
+    <ClCompile Include="fend\uicom\uimessagebox.cpp" />
+    <ClCompile Include="fend\uicom\uipagewidget.cpp" />
+    <ClCompile Include="fend\uicom\uiprogresswidget.cpp" />
+    <ClCompile Include="fend\uicom\uipushbutton.cpp" />
+    <ClCompile Include="fend\uicom\uiqosdialog.cpp" />
+    <ClCompile Include="fend\uicom\uitableview.cpp" />
+    <ClCompile Include="fend\uidelegates\uitableitemdelegate.cpp" />
+    <ClCompile Include="fend\uilogin\uilogindialog.cpp" />
+    <ClCompile Include="fend\uimain\uibucketslistwidget.cpp" />
+    <ClCompile Include="fend\uimain\uibucketstablewidget.cpp" />
+    <ClCompile Include="fend\uimain\uicreatebucketdialog.cpp" />
+    <ClCompile Include="fend\uimain\uimain.cpp" />
+    <ClCompile Include="fend\uimain\uiobjectstablewidget.cpp" />
+    <ClCompile Include="fend\uimain\uitoolbarwidget.cpp" />
+    <ClCompile Include="fend\uitransfer\uidownload.cpp" />
+    <ClCompile Include="fend\uitransfer\uitransfer.cpp" />
+    <ClCompile Include="fend\uitransfer\uiupload.cpp" />
+    <ClCompile Include="helper\bytehelper.cpp" />
+    <ClCompile Include="helper\dbsqlite.cpp" />
+    <ClCompile Include="helper\filehelper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="fend\uicom\uibasedialog.ui" />
+    <QtUic Include="fend\uicom\uibreadwidget.ui" />
+    <QtUic Include="fend\uicom\uimessagebox.ui" />
+    <QtUic Include="fend\uicom\uipagewidget.ui" />
+    <QtUic Include="fend\uicom\uiprogresswidget.ui" />
+    <QtUic Include="fend\uicom\uiqosdialog.ui" />
+    <QtUic Include="fend\uilogin\uilogindialog.ui" />
+    <QtUic Include="fend\uimain\uibucketslistwidget.ui" />
+    <QtUic Include="fend\uimain\uibucketstablewidget.ui" />
+    <QtUic Include="fend\uimain\uicreatebucketdialog.ui" />
+    <QtUic Include="fend\uimain\uimain.ui" />
+    <QtUic Include="fend\uimain\uiobjectstablewidget.ui" />
+    <QtUic Include="fend\uimain\uitoolbarwidget.ui" />
+    <QtUic Include="fend\uitransfer\uidownload.ui" />
+    <QtUic Include="fend\uitransfer\uitransfer.ui" />
+    <QtUic Include="fend\uitransfer\uiupload.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bend\gateway.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bend\man\mancloud.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bend\man\mandb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bend\dao\clouds\daoclouds.h" />
+    <ClInclude Include="bend\dao\clouds\daocloudscos.h" />
+    <ClInclude Include="bend\dao\clouds\daocloudsmock.h" />
+    <ClInclude Include="bend\dao\configs\version.h" />
+    <ClInclude Include="bend\dao\configs\versioncmd.h" />
+    <ClInclude Include="bend\dao\configs\versionjson.h" />
+    <ClInclude Include="bend\dao\dbs\daologininfo.h" />
+    <ClInclude Include="bend\dao\dbs\daologininfosqlite.h" />
+    <ClInclude Include="config\apis.h" />
+    <ClInclude Include="config\common.h" />
+    <ClInclude Include="config\errorcode.h" />
+    <ClInclude Include="config\exceptions.h" />
+    <ClInclude Include="config\globals.h" />
+    <ClInclude Include="helper\bytehelper.h" />
+    <ClInclude Include="helper\dbsqlite.h" />
+    <ClInclude Include="helper\filehelper.h" />
+    <ClInclude Include="middle\models\cloudmodels.h" />
+    <ClInclude Include="middle\models\dbmodels.h" />
+    <QtMoc Include="plugins\manplugin.h" />
+    <QtMoc Include="middle\signals\mansignals.h" />
+    <QtMoc Include="middle\manmodels.h" />
+    <QtMoc Include="middle\manglobal.h" />
+    <QtMoc Include="fend\uicom\uitableview.h" />
+    <QtMoc Include="fend\uicom\uiqosdialog.h" />
+    <QtMoc Include="fend\uicom\uipushbutton.h" />
+    <QtMoc Include="fend\uicom\uiprogresswidget.h" />
+    <QtMoc Include="fend\uicom\uipagewidget.h" />
+    <QtMoc Include="fend\uicom\uimessagebox.h" />
+    <QtMoc Include="fend\uicom\uilineedit.h" />
+    <QtMoc Include="fend\uicom\uicompletercombobox.h" />
+    <QtMoc Include="fend\uicom\uicomboline.h" />
+    <QtMoc Include="fend\uicom\uibreadwidget.h" />
+    <QtMoc Include="fend\uicom\uibasedialog.h" />
+    <QtMoc Include="fend\uidelegates\uitableitemdelegate.h" />
+    <QtMoc Include="fend\uilogin\uilogindialog.h" />
+    <QtMoc Include="fend\uimain\uitoolbarwidget.h" />
+    <QtMoc Include="fend\uimain\uiobjectstablewidget.h" />
+    <QtMoc Include="fend\uimain\uimain.h" />
+    <QtMoc Include="fend\uimain\uicreatebucketdialog.h" />
+    <QtMoc Include="fend\uimain\uibucketstablewidget.h" />
+    <QtMoc Include="fend\uimain\uibucketslistwidget.h" />
+    <QtMoc Include="fend\uitransfer\uiupload.h" />
+    <QtMoc Include="fend\uitransfer\uitransfer.h" />
+    <QtMoc Include="fend\uitransfer\uidownload.h" />
+    <QtMoc Include="config\loggerproxy.h" />
+    <QtMoc Include="bend\dao\logs\loggerqdebug.h" />
+    <QtMoc Include="bend\dao\logs\basiclogger.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

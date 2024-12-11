@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CosBrowser", "CosBrowser\CosBrowser.vcxproj", "{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}.Debug|x64.ActiveCfg = Debug|x64
+		{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}.Debug|x64.Build.0 = Debug|x64
+		{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}.Release|x64.ActiveCfg = Release|x64
+		{7BF3BD6E-29B5-4960-9054-C2E2F813FF52}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FCA7061-55D2-4E99-9F2D-5F0517EDB748}
+	EndGlobalSection
+EndGlobal
